@@ -10,14 +10,18 @@ const postSlice = createSlice({
     creatAt:"2015-05-15"
   },
   reducers: {
-    changePost: (state, action) => {
-       state.subject = action.payload.subject; 
-       state.content = action.payload.content; 
+    changeSubject: (state, action) => {
+       state.subject = action.payload; 
+       console.log(action.payload)
+    },
+    changeContent: (state, action) => {
+       state.content = action.payload; 
+       console.log(action.payload)
     },
   },
 });
 
-export const { changePost } = postSlice.actions;
+export const { changeSubject, changeContent } = postSlice.actions;
 
 export default postSlice.reducer;
 
