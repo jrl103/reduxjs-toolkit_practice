@@ -2,13 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 // Reducer
 const userSlice = createSlice({
-  name: "user",
-  initialState: {
-    username : "이름"
+    subject:"제목"
   },
   reducers: {
     changeUser: (state, action) => {
-        state.username = "하하"
+        state.subject = "하하"
     },
   },
 });
