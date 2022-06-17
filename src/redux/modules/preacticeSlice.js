@@ -11,7 +11,8 @@ const practiceSlice = createSlice({
     changeTest: (state, action) => {
       // 작동시킬 기능명
       //  initialState
-      state.test = true; // 바로 바꿔버릴 수도 있음
+      /* state.test = true; // 바로 바꿔버릴 수도 있음 */
+      state.name = "hi"
     },
   },
 });
